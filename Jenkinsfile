@@ -7,14 +7,6 @@ pipeline {
                 checkout scm
             }
         }
-
-        stage('Install Dependencies') {
-            steps {
-                echo 'Installing required packages...'
-                sh 'pip install -r requirements.txt'
-            }
-        }
-
         stage('Run Tests') {
             steps {
                 echo 'Running tests...'
