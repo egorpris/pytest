@@ -10,7 +10,8 @@ pipeline {
         stage('Run Tests') {
             steps {
                 echo 'Running tests...'
-                sh 'pytest_homework.py'
+                sh 'ls -la'
+                sh 'python pytest_homework.py'
             }
         }
     }
