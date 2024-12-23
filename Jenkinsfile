@@ -11,7 +11,7 @@ pipeline {
             steps {
                 echo 'Running tests...'
                 sh 'ls -la'
-                sh 'python3 pytest_homework.py'
+                sh 'python pytest_homework.py'
             }
         }
     }
