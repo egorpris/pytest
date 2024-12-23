@@ -10,6 +10,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 echo 'Running tests...'
+                sh 'pwd'
                 sh 'ls -la'
                 sh 'pytest_homework.py'
             }
