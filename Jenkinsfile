@@ -1,7 +1,12 @@
 pipeline {
     agent any  // This specifies that Jenkins can use any available agent to run the pipeline
-
     stages {
+        stage('Check Python') {
+            steps {
+                sh 'ls -l /usr/bin/python3'  // Check if Python3 executable exists
+                sh 'python3 --version'  // Check Python version
+            }
+        }
         stage('Checkout') {
             steps {
                 checkout scm
