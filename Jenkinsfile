@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Check Python') {
             steps {
-                sh 'ls -l /usr/bin/python3'  // Check if Python3 executable exists
                 sh 'python3 --version'  // Check Python version
             }
         }
