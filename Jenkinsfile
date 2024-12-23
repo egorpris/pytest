@@ -1,10 +1,5 @@
 pipeline {
-    // agent any This specifies that Jenkins can use any available agent to run the pipeline
-     agent {
-                docker {
-                    image 'yahorprys/my-custom-jenkins-image:latest' // Specify your Docker image
-                }
-            }
+    agent any // This specifies that Jenkins can use any available agent to run the pipeline
     stages {
         stage('Check Python') {
             steps {
