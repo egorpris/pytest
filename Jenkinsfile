@@ -32,7 +32,3 @@ pipeline {
         }
     }
 }            
-        changed {
-            echo 'Pipeline state changed!'
-        }
-    }
