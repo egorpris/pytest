@@ -1,5 +1,5 @@
 pipeline {
-    node {
+    agent none
         stages {
             stage('Checkout') {
                 steps {
@@ -16,7 +16,6 @@ pipeline {
                 }
             }
         }
-    }
     post {
         success {
             echo 'Pipeline succeeded!'
