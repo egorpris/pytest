@@ -14,6 +14,7 @@ pipeline {
                 
                     sh 'pwd'
                     sh 'ls -la'
+                    sh 'pip install req.txt'
                     sh 'python3 pytest_homework.py'
                 }
             }
