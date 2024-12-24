@@ -14,7 +14,7 @@ pipeline {
                 
                     sh 'pwd'
                     sh 'ls -la'
-                    sh 'pytest_homework.py'
+                    sh 'python3 pytest_homework.py'
                 }
             }
         }
