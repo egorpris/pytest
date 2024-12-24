@@ -31,4 +31,3 @@ node {
             echo 'Pipeline state changed!'
         }
     }
-}
