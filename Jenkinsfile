@@ -10,6 +10,7 @@ pipeline {
                 steps {
                     echo 'Running tests...'
                     sh 'python3 --version'
+                    sh 'python --version'
                     sh 'pwd'
                     sh 'ls -la'
                     sh 'pytest_homework.py'
