@@ -1,4 +1,6 @@
-node {
+pipeline {
+    agent any // This specifies that Jenkins can use any available agent to run the pipeline
+    stages {
             stage('Checkout') {
                 steps {
                     checkout scm
@@ -26,7 +28,8 @@ node {
         unstable {
             echo 'Pipeline is unstable!'
         }
-
+    }
+}            
         changed {
             echo 'Pipeline state changed!'
         }
