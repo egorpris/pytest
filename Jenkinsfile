@@ -1,6 +1,4 @@
-pipeline {
-    agent none
-        stages {
+node {
             stage('Checkout') {
                 steps {
                     checkout scm
